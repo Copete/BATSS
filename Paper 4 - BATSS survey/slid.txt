@@ -1,0 +1,3 @@
+SLEW ID: slid
+Coordinates to search (J2000): 00h40m29.616s +30d40m44.04s
+Energy band: soft (softkeV)
