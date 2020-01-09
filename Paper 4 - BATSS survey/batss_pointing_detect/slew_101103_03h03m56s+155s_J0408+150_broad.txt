@@ -1,0 +1,14 @@
+====================================================================== Wed Sep 19 23:42:26 2018
+BATSS Observation type and ID: SLEW 101103_03h03m56s+155s
+Coordinates to search (J2000): 04h07m47.04s +15d01m01.2s
+Energy band: broad (15-150 keV)
+
+===============================================================================================
+PRECEDING POINTING. Observation ID: 00038328004
+Source coding fraction:   0.00%. Pointing skipped
+
+===============================================================================================
+FOLLOWING POINTING. Observation ID: 00036375030
+Source coding fraction:   0.00%. Pointing skipped
+
+DONE. Processing time: 0:00:02

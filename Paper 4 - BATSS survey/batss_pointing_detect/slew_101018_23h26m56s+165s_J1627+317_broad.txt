@@ -1,0 +1,29 @@
+====================================================================== Thu Sep 20 00:03:34 2018
+BATSS Observation type and ID: SLEW 101018_23h26m56s+165s
+Coordinates to search (J2000): 16h27m06.96s +31d42m39.6s
+Energy band: broad (15-150 keV)
+
+===============================================================================================
+PRECEDING POINTING. Observation ID: 00037947001
+Source coding fraction:  92.19%. Pointing data downloaded (15s)
+
+SNAPSHOT processing:
+GTI filtering: Standard
+Detections: 1
+ #   Time_start                Time_stop                 Exp[s]    CF[%]    S/N(pix)   S/N(fit)
+ 1   2010-10-18 23:07:03.000   2010-10-18 23:27:03.000    1200.0    95.31       0.39       0.42
+
+DPH processing:
+GTI filtering: Standard
+Detections: 4
+ #   Time_start                Time_stop                 Exp[s]    CF[%]    S/N(pix)   S/N(fit)
+ 1   2010-10-18 23:07:03.000   2010-10-18 23:12:03.000     300.0    95.31      -1.03      -0.66
+ 2   2010-10-18 23:12:03.000   2010-10-18 23:17:03.000     300.0    95.31      -1.22      -1.20
+ 3   2010-10-18 23:17:03.000   2010-10-18 23:22:03.000     300.0    95.31       1.25       1.19
+ 4   2010-10-18 23:22:03.000   2010-10-18 23:27:03.000     300.0    95.31       1.32       1.18
+
+===============================================================================================
+FOLLOWING POINTING. Observation ID: 00090953001
+Source coding fraction:   0.00%. Pointing skipped
+
+DONE. Processing time: 0:02:23

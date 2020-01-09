@@ -1,0 +1,35 @@
+%LaTeX table with BATSS catalog of single unidentified detections (pointing data)
+
+\begin{longrotatetable}
+\renewcommand{\tabcolsep}{0.4em}
+\tabletypesize{\scriptsize}
+\tablecolumns{12}
+
+\begin{deluxetable*}{r l c r r r r c r r r r}
+	%Preamble
+	\tablecaption{BATSS catalog of single unidentified detections --- pointing data
+		\label{tab:cat_Neq1_point}}
+	\tablehead{
+		\colhead{\multirow{2}{*}{\#}} & 
+		\colhead{\multirow{2}{*}{Name}} & 
+		\colhead{\multirow{2}{*}{Observation}} & 
+		\multicolumn{4}{c}{Preceding} &  & 
+		\multicolumn{4}{c}{Following} \\
+		\cline{4-7} \cline{9-12}
+		 &  &  & 
+		\colhead{$\Delta T_0$[s]} & 
+		\colhead{Exp[s]} & 
+		\colhead{CF[\%]} & 
+		\colhead{$S/N$} &  & 
+		\colhead{$\Delta T_0$[s]} & 
+		\colhead{Exp[s]} & 
+		\colhead{CF[\%]} & 
+		\colhead{$S/N$}
+	}
+	%Table data
+	\startdata
+	\enddata
+\end{deluxetable*}
+%\clearpage
+%\end{landscape}
+\end{longrotatetable}

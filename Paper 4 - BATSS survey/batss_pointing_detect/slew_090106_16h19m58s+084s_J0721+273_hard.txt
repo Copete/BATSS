@@ -1,0 +1,38 @@
+====================================================================== Wed Sep 19 23:57:07 2018
+BATSS Observation type and ID: SLEW 090106_16h19m58s+084s
+Coordinates to search (J2000): 07h21m27.6s +27d19m04.8s
+Energy band: hard (50-150 keV)
+
+===============================================================================================
+PRECEDING POINTING. Observation ID: 00038034004
+Source coding fraction:  50.78%. Pointing data downloaded (12s)
+
+SNAPSHOT processing:
+GTI filtering: Standard failed. USERGTI only
+Detections: 1
+ #   Time_start                Time_stop                 Exp[s]    CF[%]    S/N(pix)   S/N(fit)
+ 1   2009-01-06 16:16:52.000   2009-01-06 16:20:03.000     191.0    53.91       0.26       0.57
+
+DPH processing:
+GTI filtering: Standard failed. USERGTI only
+Detections: 1
+ #   Time_start                Time_stop                 Exp[s]    CF[%]    S/N(pix)   S/N(fit)
+ 1   2009-01-06 16:16:52.000   2009-01-06 16:20:03.000     191.0    53.91       0.26       0.57
+
+===============================================================================================
+FOLLOWING POINTING. Observation ID: 00338895005
+Source coding fraction:  73.44%. Pointing data downloaded (12s)
+
+SNAPSHOT processing:
+GTI filtering: Standard failed. USERGTI only
+Detections: 1
+ #   Time_start                Time_stop                 Exp[s]    CF[%]    S/N(pix)   S/N(fit)
+ 1   2009-01-06 16:21:27.000   2009-01-06 16:40:03.000    1116.0    76.58      -0.65      -0.13
+
+DPH processing:
+GTI filtering: Standard failed. USERGTI only
+Detections: 1
+ #   Time_start                Time_stop                 Exp[s]    CF[%]    S/N(pix)   S/N(fit)
+ 1   2009-01-06 16:21:27.000   2009-01-06 16:40:03.000    1116.0    76.58      -0.65      -0.13
+
+DONE. Processing time: 0:03:31

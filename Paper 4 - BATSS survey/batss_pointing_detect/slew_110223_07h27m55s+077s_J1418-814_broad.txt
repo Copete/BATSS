@@ -1,0 +1,26 @@
+====================================================================== Wed Sep 19 23:43:48 2018
+BATSS Observation type and ID: SLEW 110223_07h27m55s+077s
+Coordinates to search (J2000): 14h18m29.52s -81d26m34.8s
+Energy band: broad (15-150 keV)
+
+===============================================================================================
+PRECEDING POINTING. Observation ID: 00074362010
+Source coding fraction:  88.28%. Pointing data downloaded (12s)
+
+SNAPSHOT processing:
+GTI filtering: Standard failed. USERGTI only
+Detections: 1
+ #   Time_start                Time_stop                 Exp[s]    CF[%]    S/N(pix)   S/N(fit)
+ 1   2011-02-23 07:04:14.000   2011-02-23 07:28:03.000     208.0    89.06       0.52       0.87
+
+DPH processing:
+GTI filtering: Standard failed. USERGTI only
+Detections: 1
+ #   Time_start                Time_stop                 Exp[s]    CF[%]    S/N(pix)   S/N(fit)
+ 1   2011-02-23 07:04:14.000   2011-02-23 07:28:03.000     208.0    89.06       0.52       0.87
+
+===============================================================================================
+FOLLOWING POINTING. Observation ID: 00041451003
+Source coding fraction:   0.00%. Pointing skipped
+
+DONE. Processing time: 0:01:03

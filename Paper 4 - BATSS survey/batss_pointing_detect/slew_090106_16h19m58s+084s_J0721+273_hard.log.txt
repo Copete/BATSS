@@ -1,0 +1,605 @@
+exec(open('batss_pointing_detect.bat.py').read())
+====================================================================== Fri Sep 14 16:00:31 2018
+BATSS Observation type and ID:  SLEW 090106_16h19m58s+084s
+Coordinates to search (J2000):  07h21m27.6s +27d19m04.8s
+Energy band: hard (50-150 keV)
+/usr/local/lib/python3.6/site-packages/bs4/__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("html5lib"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 1 of the file <stdin>. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup(YOUR_MARKUP})
+
+to this:
+
+ BeautifulSoup(YOUR_MARKUP, "html5lib")
+
+  markup_type=markup_type))
+====================================================================== Fri Sep 14 16:00:34 2018
+PRECEDING POINTING. Observation ID: 00038034004
+Source coding fraction:  50.78%. Downloading pointing data... done (22s)
+batsurvey ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/ ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard/ energybins=50-150 elimits=50-150 incatalog=./data/slew_090106_16h19m58s+084s_J0721+273_hard/temp/batss.in.cat ncleaniter=2 timesep=SNAPSHOT gtifile=./data/slew_090106_16h19m58s+084s_J0721+273_hard/temp/slew_090106_16h19m58s+084s_pre.gti expothresh=150.0
+==========================================================
+batsurvey v6.15
+==========================================================
+====================================================
+batsurvey: time-check - 2018-09-14T20:00:59
+batsurvey: time-check - 2018-09-14T20:00:59
+batsurvey-erebin @./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//scratch/survey.lis ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/%rootfile_erebin.dph calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' outmap=./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/%rootfile.mask clobber=yes baterebin_opts=' ebins=0-50,50-150,150-350'
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05b6g022e.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05b6g022e_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05b6g022e.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05b6g022e.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05b6g022e_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05b6g022e.mask (set chatter to 3+ for value description)
+Total exposure time in output 191
+Number of time intervals in input 1
+Number of time intervals in output 1
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05b7g022f.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05b7g022f_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05b7g022f.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05b7g022f.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05b7g022f_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05b7g022f.mask (set chatter to 3+ for value description)
+Total exposure time in output 184
+Number of time intervals in input 1
+Number of time intervals in output 1
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05b8g022f.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05b8g022f_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05b8g022f.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05b8g022f.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05b8g022f_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05b8g022f.mask (set chatter to 3+ for value description)
+Total exposure time in output 188
+Number of time intervals in input 1
+Number of time intervals in output 1
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05b9g022f.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05b9g022f_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05b9g022f.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05b9g022f.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05b9g022f_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05b9g022f.mask (set chatter to 3+ for value description)
+Total exposure time in output 185
+Number of time intervals in input 1
+Number of time intervals in output 1
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05bag0230.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05bag0230_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05bag0230.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05bag0230.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05bag0230_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05bag0230.mask (set chatter to 3+ for value description)
+Total exposure time in output 191
+Number of time intervals in input 1
+Number of time intervals in output 1
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05bbg0230.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05bbg0230_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05bbg0230.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05bbg0230.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05bbg0230_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05bbg0230.mask (set chatter to 3+ for value description)
+Total exposure time in output 187
+Number of time intervals in input 1
+Number of time intervals in output 1
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05bcg0230.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05bcg0230_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05bcg0230.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05bcg0230.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05bcg0230_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05bcg0230.mask (set chatter to 3+ for value description)
+Total exposure time in output 191
+Number of time intervals in input 1
+Number of time intervals in output 1
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05bdg0231.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05bdg0231_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05bdg0231.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05bdg0231.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05bdg0231_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05bdg0231.mask (set chatter to 3+ for value description)
+Total exposure time in output 185
+Number of time intervals in input 1
+Number of time intervals in output 1
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05beg0231.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05beg0231_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05beg0231.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05beg0231.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05beg0231_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//dph/sw00038034004bsvpbo05beg0231.mask (set chatter to 3+ for value description)
+Total exposure time in output 126
+Number of time intervals in input 1
+Number of time intervals in output 1
+batsurvey: time-check - 2018-09-14T20:01:05
+batsurvey: time-check - 2018-09-14T20:01:05
+batsurvey: time-check - 2018-09-14T20:01:05
+batsurvey-gti './data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/' '@./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//scratch/esurvey.lis' './data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//gti' sepdph='NO' filters='all' elimits='50-150' rateminthresh=3000 ratemaxthresh=12000 detthresh=22000 stlossfcnthresh=1.0E-9 filtexpr='NONE' saofiltexpr='ELV > 30.0' dphfiltexpr='DATA_FLAGS == 0' gtifile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/temp/slew_090106_16h19m58s+084s_pre.gti'
+batsurvey-gti v1.7
+----------------------------------------------------------
+BAD_ROW_NUM
+CFITSIO ERROR BAD_ROW_NUM: bad first row number
+Task ftsort 1.4 terminating with status 307
+       Test                       # GTIs
+       global                         38
+       pointing                        9
+       filter_file            (skippped)
+       ndets                           1
+       startracker                     2
+       st_lossfcn                     21
+ERROR: ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//gti/low_rate.gti contained no good times (failed 'dph_rate' test) at /soft/lheasoft/headas/x86_64-pc-linux/bin/batsurvey-gti line 599.
+Task batsurvey-gti 1.7 terminating with status -1
+batsurvey: time-check - 2018-09-14T20:01:09
+ERROR: could not create ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard//gti/master.gti at /soft/lheasoft/headas/x86_64-pc-linux/bin/batsurvey line 706.
+Task batsurvey 6.15 terminating with status -1
+Warning: No SNAPSHOT catalogs found. Skipping
+batsurvey ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/ ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph/ energybins=50-150 elimits=50-150 incatalog=./data/slew_090106_16h19m58s+084s_J0721+273_hard/temp/batss.in.cat ncleaniter=2 timesep=DPH gtifile=./data/slew_090106_16h19m58s+084s_J0721+273_hard/temp/slew_090106_16h19m58s+084s_pre.gti expothresh=150.0
+==========================================================
+batsurvey v6.15
+==========================================================
+====================================================
+batsurvey: time-check - 2018-09-14T20:01:10
+batsurvey: time-check - 2018-09-14T20:01:10
+batsurvey-erebin @./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//scratch/survey.lis ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/%rootfile_erebin.dph calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' outmap=./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/%rootfile.mask clobber=yes baterebin_opts=' ebins=0-50,50-150,150-350'
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05b6g022e.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05b6g022e_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05b6g022e.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05b6g022e.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05b6g022e_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05b6g022e.mask (set chatter to 3+ for value description)
+Total exposure time in output 191
+Number of time intervals in input 1
+Number of time intervals in output 1
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05b7g022f.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05b7g022f_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05b7g022f.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05b7g022f.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05b7g022f_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05b7g022f.mask (set chatter to 3+ for value description)
+Total exposure time in output 184
+Number of time intervals in input 1
+Number of time intervals in output 1
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05b8g022f.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05b8g022f_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05b8g022f.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05b8g022f.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05b8g022f_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05b8g022f.mask (set chatter to 3+ for value description)
+Total exposure time in output 188
+Number of time intervals in input 1
+Number of time intervals in output 1
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05b9g022f.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05b9g022f_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05b9g022f.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05b9g022f.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05b9g022f_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05b9g022f.mask (set chatter to 3+ for value description)
+Total exposure time in output 185
+Number of time intervals in input 1
+Number of time intervals in output 1
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05bag0230.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05bag0230_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05bag0230.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05bag0230.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05bag0230_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05bag0230.mask (set chatter to 3+ for value description)
+Total exposure time in output 191
+Number of time intervals in input 1
+Number of time intervals in output 1
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05bbg0230.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05bbg0230_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05bbg0230.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05bbg0230.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05bbg0230_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05bbg0230.mask (set chatter to 3+ for value description)
+Total exposure time in output 187
+Number of time intervals in input 1
+Number of time intervals in output 1
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05bcg0230.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05bcg0230_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05bcg0230.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05bcg0230.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05bcg0230_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05bcg0230.mask (set chatter to 3+ for value description)
+Total exposure time in output 191
+Number of time intervals in input 1
+Number of time intervals in output 1
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05bdg0231.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05bdg0231_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05bdg0231.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05bdg0231.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05bdg0231_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05bdg0231.mask (set chatter to 3+ for value description)
+Total exposure time in output 185
+Number of time intervals in input 1
+Number of time intervals in output 1
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05beg0231.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05beg0231_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/hk/sw00038034004bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05beg0231.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s//bat/survey/sw00038034004bsvpbo05beg0231.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05beg0231_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00038034004bsvpbo05beg0231.mask (set chatter to 3+ for value description)
+Total exposure time in output 126
+Number of time intervals in input 1
+Number of time intervals in output 1
+batsurvey: time-check - 2018-09-14T20:01:14
+batsurvey: time-check - 2018-09-14T20:01:14
+batsurvey: time-check - 2018-09-14T20:01:14
+batsurvey-gti './data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/' '@./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//scratch/esurvey.lis' './data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//gti' sepdph='YES' filters='all' elimits='50-150' rateminthresh=3000 ratemaxthresh=12000 detthresh=22000 stlossfcnthresh=1.0E-9 filtexpr='NONE' saofiltexpr='ELV > 30.0' dphfiltexpr='DATA_FLAGS == 0' gtifile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/temp/slew_090106_16h19m58s+084s_pre.gti'
+batsurvey-gti v1.7
+----------------------------------------------------------
+BAD_ROW_NUM
+CFITSIO ERROR BAD_ROW_NUM: bad first row number
+Task ftsort 1.4 terminating with status 307
+       Test                       # GTIs
+       global                         38
+       pointing                        9
+       filter_file            (skippped)
+       ndets                           1
+       startracker                     2
+       st_lossfcn                     21
+ERROR: ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//gti/low_rate.gti contained no good times (failed 'dph_rate' test) at /soft/lheasoft/headas/x86_64-pc-linux/bin/batsurvey-gti line 599.
+Task batsurvey-gti 1.7 terminating with status -1
+batsurvey: time-check - 2018-09-14T20:01:16
+ERROR: could not create ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pre_slew_090106_16h19m58s+084s/results_hard_dph//gti/master.gti at /soft/lheasoft/headas/x86_64-pc-linux/bin/batsurvey line 706.
+Task batsurvey 6.15 terminating with status -1
+Warning: No DPH catalogs found. Skipping
+====================================================================== Fri Sep 14 16:01:16 2018
+FOLLOWING POINTING. Observation ID: 00338895005
+[33mWARNING[39m: AstropyDeprecationWarning: Config parameter 'enabled_record_valued_keyword_cards' in section [io.fits] of the file '/home/acopete/.astropy/config/astropy.cfg' is deprecated. Use 'enable_record_valued_keyword_cards' in section [io.fits] instead. [astropy.config.configuration]
+Source coding fraction:  73.44%. Downloading pointing data... done (19s)
+batsurvey ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/ ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard/ energybins=50-150 elimits=50-150 incatalog=./data/slew_090106_16h19m58s+084s_J0721+273_hard/temp/batss.in.cat ncleaniter=2 timesep=SNAPSHOT gtifile=./data/slew_090106_16h19m58s+084s_J0721+273_hard/temp/slew_090106_16h19m58s+084s_pos.gti expothresh=150.0
+==========================================================
+batsurvey v6.15
+==========================================================
+====================================================
+batsurvey: time-check - 2018-09-14T20:01:37
+batsurvey: time-check - 2018-09-14T20:01:37
+batsurvey-erebin @./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//scratch/survey.lis ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/%rootfile_erebin.dph calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' outmap=./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/%rootfile.mask clobber=yes baterebin_opts=' ebins=0-50,50-150,150-350'
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b5g022e.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b5g022e_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b5g022e.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b5g022e.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b5g022e_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b5g022e.mask (set chatter to 3+ for value description)
+Total exposure time in output 929
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b6g022e.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b6g022e_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b6g022e.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b6g022e.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b6g022e_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b6g022e.mask (set chatter to 3+ for value description)
+Total exposure time in output 992
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b7g022f.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b7g022f_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b7g022f.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b7g022f.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b7g022f_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b7g022f.mask (set chatter to 3+ for value description)
+Total exposure time in output 999
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b8g022f.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b8g022f_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b8g022f.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b8g022f.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b8g022f_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b8g022f.mask (set chatter to 3+ for value description)
+Total exposure time in output 995
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b9g022f.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b9g022f_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b9g022f.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b9g022f.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b9g022f_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05b9g022f.mask (set chatter to 3+ for value description)
+Total exposure time in output 1000
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05bag0230.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05bag0230_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05bag0230.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05bag0230.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05bag0230_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05bag0230.mask (set chatter to 3+ for value description)
+Total exposure time in output 1116
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05bbg0230.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05bbg0230_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05bbg0230.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05bbg0230.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05bbg0230_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05bbg0230.mask (set chatter to 3+ for value description)
+Total exposure time in output 1119
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05bcg0231.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05bcg0231_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05bcg0231.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05bcg0231.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05bcg0231_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05bcg0231.mask (set chatter to 3+ for value description)
+Total exposure time in output 1115
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05bdg0231.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05bdg0231_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05bdg0231.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05bdg0231.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05bdg0231_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05bdg0231.mask (set chatter to 3+ for value description)
+Total exposure time in output 1120
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05beg0231.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05beg0231_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05beg0231.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05beg0231.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05beg0231_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//dph/sw00338895005bsvpbo05beg0231.mask (set chatter to 3+ for value description)
+Total exposure time in output 1003
+Number of time intervals in input 4
+Number of time intervals in output 4
+batsurvey: time-check - 2018-09-14T20:01:48
+batsurvey: time-check - 2018-09-14T20:01:48
+batsurvey: time-check - 2018-09-14T20:01:48
+batsurvey-gti './data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/' '@./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//scratch/esurvey.lis' './data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//gti' sepdph='NO' filters='all' elimits='50-150' rateminthresh=3000 ratemaxthresh=12000 detthresh=22000 stlossfcnthresh=1.0E-9 filtexpr='NONE' saofiltexpr='ELV > 30.0' dphfiltexpr='DATA_FLAGS == 0' gtifile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/temp/slew_090106_16h19m58s+084s_pos.gti'
+batsurvey-gti v1.7
+----------------------------------------------------------
+       Test                       # GTIs
+       global                         38
+       pointing                       10
+       filter_file            (skippped)
+       ndets                           1
+       startracker                     2
+       st_lossfcn                      2
+       dph_rate                        1
+       data_flags                     40
+       earthconstraints               10
+       occultation            (skippped)
+       usergti                         1
+----------------------------------------------------------
+       COMBINED                        0
+----------------------------------------------------------
+ERROR: master GTI contained no time intervals at /soft/lheasoft/headas/x86_64-pc-linux/bin/batsurvey-gti line 753.
+Task batsurvey-gti 1.7 terminating with status -1
+batsurvey: time-check - 2018-09-14T20:01:52
+ERROR: could not create ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard//gti/master.gti at /soft/lheasoft/headas/x86_64-pc-linux/bin/batsurvey line 706.
+Task batsurvey 6.15 terminating with status -1
+Warning: No SNAPSHOT catalogs found. Skipping
+batsurvey ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/ ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph/ energybins=50-150 elimits=50-150 incatalog=./data/slew_090106_16h19m58s+084s_J0721+273_hard/temp/batss.in.cat ncleaniter=2 timesep=DPH gtifile=./data/slew_090106_16h19m58s+084s_J0721+273_hard/temp/slew_090106_16h19m58s+084s_pos.gti expothresh=150.0
+==========================================================
+batsurvey v6.15
+==========================================================
+====================================================
+batsurvey: time-check - 2018-09-14T20:01:52
+batsurvey: time-check - 2018-09-14T20:01:52
+batsurvey-erebin @./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//scratch/survey.lis ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/%rootfile_erebin.dph calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' outmap=./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/%rootfile.mask clobber=yes baterebin_opts=' ebins=0-50,50-150,150-350'
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b5g022e.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b5g022e_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b5g022e.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b5g022e.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b5g022e_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b5g022e.mask (set chatter to 3+ for value description)
+Total exposure time in output 929
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b6g022e.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b6g022e_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b6g022e.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b6g022e.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b6g022e_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b6g022e.mask (set chatter to 3+ for value description)
+Total exposure time in output 992
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b7g022f.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b7g022f_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b7g022f.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b7g022f.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b7g022f_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b7g022f.mask (set chatter to 3+ for value description)
+Total exposure time in output 999
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b8g022f.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b8g022f_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b8g022f.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b8g022f.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b8g022f_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b8g022f.mask (set chatter to 3+ for value description)
+Total exposure time in output 995
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b9g022f.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b9g022f_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b9g022f.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05b9g022f.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b9g022f_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05b9g022f.mask (set chatter to 3+ for value description)
+Total exposure time in output 1000
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05bag0230.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05bag0230_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05bag0230.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05bag0230.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05bag0230_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05bag0230.mask (set chatter to 3+ for value description)
+Total exposure time in output 1116
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05bbg0230.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05bbg0230_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05bbg0230.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05bbg0230.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05bbg0230_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05bbg0230.mask (set chatter to 3+ for value description)
+Total exposure time in output 1119
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05bcg0231.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05bcg0231_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05bcg0231.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05bcg0231.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05bcg0231_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05bcg0231.mask (set chatter to 3+ for value description)
+Total exposure time in output 1115
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05bdg0231.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05bdg0231_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05bdg0231.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05bdg0231.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05bdg0231_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05bdg0231.mask (set chatter to 3+ for value description)
+Total exposure time in output 1120
+Number of time intervals in input 4
+Number of time intervals in output 4
+baterebin infile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05beg0231.dph.gz' outfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05beg0231_erebin.dph' calfile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/hk/sw00338895005bgocb.hk.gz' residfile='CALDB' pulserfile='CALDB' fltpulserfile='CALDB' clobber=YES history=YES chatter=1 outmap='./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05beg0231.mask' ebins=0-50,50-150,150-350
+Contents of the low integral bin will be placed in the lowest energy output bin.
+  FIXEDDAC correction used
+WARNING: Gain/offset index numbers in DPH row and in calfile keywords don't match. 
+         This is not a serious problem, under most circumstances. 
+baterebin v8.3 completed
+Input DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s//bat/survey/sw00338895005bsvpbo05beg0231.dph.gz
+Output DPH file is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05beg0231_erebin.dph
+Output imperfect conversion map is ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//dph/sw00338895005bsvpbo05beg0231.mask (set chatter to 3+ for value description)
+Total exposure time in output 1003
+Number of time intervals in input 4
+Number of time intervals in output 4
+batsurvey: time-check - 2018-09-14T20:02:04
+batsurvey: time-check - 2018-09-14T20:02:04
+batsurvey: time-check - 2018-09-14T20:02:04
+batsurvey-gti './data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/' '@./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//scratch/esurvey.lis' './data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//gti' sepdph='YES' filters='all' elimits='50-150' rateminthresh=3000 ratemaxthresh=12000 detthresh=22000 stlossfcnthresh=1.0E-9 filtexpr='NONE' saofiltexpr='ELV > 30.0' dphfiltexpr='DATA_FLAGS == 0' gtifile='./data/slew_090106_16h19m58s+084s_J0721+273_hard/temp/slew_090106_16h19m58s+084s_pos.gti'
+batsurvey-gti v1.7
+----------------------------------------------------------
+       Test                       # GTIs
+       global                         38
+       pointing                       10
+       filter_file            (skippped)
+       ndets                           1
+       startracker                     2
+       st_lossfcn                      2
+       dph_rate                        1
+       data_flags                     40
+       earthconstraints               10
+       occultation            (skippped)
+       usergti                         1
+----------------------------------------------------------
+       COMBINED                        0
+----------------------------------------------------------
+ERROR: master GTI contained no time intervals at /soft/lheasoft/headas/x86_64-pc-linux/bin/batsurvey-gti line 753.
+Task batsurvey-gti 1.7 terminating with status -1
+batsurvey: time-check - 2018-09-14T20:02:07
+ERROR: could not create ./data/slew_090106_16h19m58s+084s_J0721+273_hard/pos_slew_090106_16h19m58s+084s/results_hard_dph//gti/master.gti at /soft/lheasoft/headas/x86_64-pc-linux/bin/batsurvey line 706.
+Task batsurvey 6.15 terminating with status -1
+Warning: No DPH catalogs found. Skipping
+
+DONE. Processing time: 0:01:35
+Closed output text file:  ./data/slew_090106_16h19m58s+084s_J0721+273_hard/slew_090106_16h19m58s+084s_J0721+273_hard.txt
+>>> 

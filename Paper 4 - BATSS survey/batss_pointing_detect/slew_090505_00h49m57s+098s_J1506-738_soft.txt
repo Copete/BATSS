@@ -1,0 +1,41 @@
+====================================================================== Wed Sep 19 23:52:28 2018
+BATSS Observation type and ID: SLEW 090505_00h49m57s+098s
+Coordinates to search (J2000): 15h05m41.52s -73d46m40.8s
+Energy band: soft (15-50 keV)
+
+===============================================================================================
+PRECEDING POINTING. Observation ID: 00031345037
+Source coding fraction:  13.67%. Pointing data downloaded (11s)
+
+SNAPSHOT processing:
+GTI filtering: Standard
+Detections: 1
+ #   Time_start                Time_stop                 Exp[s]    CF[%]    S/N(pix)   S/N(fit)
+ 1   2009-05-05 00:41:44.000   2009-05-05 00:50:03.000     499.0    19.73       0.36       0.45
+
+DPH processing:
+GTI filtering: Standard
+Detections: 2
+ #   Time_start                Time_stop                 Exp[s]    CF[%]    S/N(pix)   S/N(fit)
+ 1   2009-05-05 00:41:44.000   2009-05-05 00:46:44.000     300.0    19.73       0.75       0.53
+ 2   2009-05-05 00:46:44.000   2009-05-05 00:50:03.000     199.0    19.73       0.04       0.45
+
+===============================================================================================
+FOLLOWING POINTING. Observation ID: 00090218010
+Source coding fraction:  39.45%. Pointing data downloaded (12s)
+
+SNAPSHOT processing:
+GTI filtering: Standard
+Detections: 1
+ #   Time_start                Time_stop                 Exp[s]    CF[%]    S/N(pix)   S/N(fit)
+ 1   2009-05-05 00:51:41.000   2009-05-05 01:08:03.000     982.0    39.45       0.40       0.77
+
+DPH processing:
+GTI filtering: Standard
+Detections: 3
+ #   Time_start                Time_stop                 Exp[s]    CF[%]    S/N(pix)   S/N(fit)
+ 1   2009-05-05 00:51:41.000   2009-05-05 00:56:41.000     300.0    39.45       1.42       1.68
+ 2   2009-05-05 00:56:41.000   2009-05-05 01:01:41.000     300.0    39.45       0.02       0.27
+ 3   2009-05-05 01:01:41.000   2009-05-05 01:06:41.000     300.0    39.45      -0.47      -0.34
+
+DONE. Processing time: 0:03:10

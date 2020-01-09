@@ -1,3 +1,0 @@
-SLEW ID: slew_0
-Coordinates to search (J2000): 01h08m29.52s -43d19m44.4s
-Energy band: soft (softkeV)
