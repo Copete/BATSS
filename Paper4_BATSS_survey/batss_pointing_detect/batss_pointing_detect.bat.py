@@ -1,4 +1,4 @@
-from ../../BATSS_reprocess import BATSS_reprocess
+from BATSS_reprocess import BATSS_reprocess
 from batss_pointing_detect import batss_pointing_detect
 
 det = [
