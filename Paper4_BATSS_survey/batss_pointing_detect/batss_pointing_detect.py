@@ -130,6 +130,10 @@ def batss_pointing_detect(obs_id, #should be BATSS_slew object?
             after='TUNIT7')
         cat_in.writeto(catfile_in, overwrite=True)
 
+
+        print(obs0.fitsfile)
+        print(obs0.fitsfile_realtime)
+
         # Get master FITS header for slew (archival by default)
         if not os.path.exists(obs0.fitsfile):
             if not os.path.exists(obs0.fitsfile_realtime):
