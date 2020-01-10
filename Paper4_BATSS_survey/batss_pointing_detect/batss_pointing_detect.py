@@ -130,7 +130,7 @@ def batss_pointing_detect(obs_id, #should be BATSS_slew object?
             after='TUNIT7')
         cat_in.writeto(catfile_in, overwrite=True)
 
-
+        print('EXECUTING!')
         print(obs0.fitsfile)
         print(obs0.fitsfile_realtime)
 
