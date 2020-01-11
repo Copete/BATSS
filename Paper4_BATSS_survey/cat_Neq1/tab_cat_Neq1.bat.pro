@@ -1,6 +1,7 @@
 ;Produce output tables of all BATSS single-observation (N=1) candidates
 @/data/luna0/acopete/BATSS/pipeline/BATSS_general.pro
 @/data/luna0/acopete/BATSS/tests/HEASARC/HEASARC_tables.pro ;Load HEASARC tables script
+; 01/10/20 Update to produce new table for BATSS paper 4
 
 ;Inverse error function
 FUNCTION INVERF, erfx
@@ -259,7 +260,9 @@ grb = [{name:'GRB 070326' , trigger:100042L, archival:0B, met:196619290.5D, alig
        {name:'GRB 110107A', trigger:102225L, archival:2B, met:316127687.8D, align:0}, $ ;NOT reported by BATSS first
        {name:'GRB 110319B', trigger:102413L, archival:2B, met:322256047.0D, align:0}, $ ;NOT reported by BATSS first
        {name:'GRB 110906A', trigger:102619L, archival:0B, met:jd2met(julday(09,06,2011)), align:-1}, $
-       {name:'GRB 111011A', trigger:102678L, archival:1B, met:jd2met(julday(10,11,2011)), align:0}]
+       {name:'GRB 111011A', trigger:102678L, archival:1B, met:jd2met(julday(10,11,2011)), align:0}, $
+       {name:'GRB 120524A', trigger:102967L, archival:1B, met:jd2met(julday(05,24,2012)), align:0}, $ ;Unreported BATSS GRB
+       ]
 ;-Get all BATSS candidates
 restore, root+'products/triggers/hk/BATSS_matched.idl'
 cand_matched[where(cand_matched.trigger eq 101774L)].name_cat = 'GRB 100728A' ;TEMP???
@@ -480,9 +483,9 @@ gti_bad = $
     {start:jd2met(julday(07,27,2008,17,29,19)), $
      stop: jd2met(julday(07,27,2008,17,34,04+076))},$
     {start:jd2met(julday(10,15,2008,09,50,00)), $
-     stop: jd2met(julday(10,15,2008,10,28,49+128))},$ 
+     stop: jd2met(julday(10,15,2008,10,28,49+128))},$
     {start:jd2met(julday(02,19,2009,16,48,00)), $
-     stop: jd2met(julday(02,19,2009,17,54,30))},$ 
+     stop: jd2met(julday(02,19,2009,17,54,30))},$
     {start:jd2met(julday(02,25,2009,18,00,57)), $
      stop: jd2met(julday(02,25,2009,18,00,57+169))},$
     {start:jd2met(julday(07,26,2009,04,58,00)), $
