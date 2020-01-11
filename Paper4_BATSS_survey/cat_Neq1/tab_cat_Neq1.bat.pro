@@ -266,7 +266,7 @@ grb = [{name:'GRB 070326' , trigger:100042L, archival:0B, met:196619290.5D, alig
        {name:'GRB 110319B', trigger:102413L, archival:2B, met:322256047.0D, align:0}, $ ;NOT reported by BATSS first
        {name:'GRB 110906A', trigger:102619L, archival:0B, met:jd2met(julday(09,06,2011)), align:-1}, $
        {name:'GRB 111011A', trigger:102678L, archival:1B, met:jd2met(julday(10,11,2011)), align:0}, $
-       {name:'GRB 120524A', trigger:102967L, archival:1B, met:jd2met(julday(05,24,2012)), align:0}, $ ;Unreported BATSS GRB
+       {name:'GRB 120524A', trigger:102967L, archival:1B, met:jd2met(julday(05,24,2012)), align:0}$ ;Unreported BATSS GRB
        ]
 ;-Get all BATSS candidates
 restore, root+'products/triggers/hk/BATSS_matched.idl'
