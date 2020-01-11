@@ -27,7 +27,7 @@ root = '/data/luna0/acopete/BATSS/'
 ;testroot = root+'Papers/Paper4_BATSS_survey/cat_Neq1/' ;Old location
 testroot = root+'GitHub/BATSS/Paper4_BATSS_survey/cat_Neq1/'  ;New location in Git repository
 
-results_only = 0B               ;Set to display results only
+results_only = 1B               ;Set to display results only
 
 snr_thresh = 6.5
 flag_r99 = 0B ;Use 99% radii (rather than 90% radii) for matching
@@ -55,14 +55,12 @@ psfile  = testroot+'tab_cat_Neq1_HEASARC_all.ps'
 n_col = 20 ;Number of table columns
 table = $
    ['%LaTeX table with BATSS catalog of single unidentified detections','', $
-    '\clearpage', $
-    '\LongTables', $
-    '\begin{landscape}', $
-    '\renewcommand{\arraystretch}{1.10}', $
+    '\begin{longrotatetable}', $
+    '%\renewcommand{\arraystretch}{1.10}', $
     '\renewcommand{\tabcolsep}{0.4em}', $
     '\tabletypesize{\scriptsize}', $
-    '\tablecolumns{20}', $
-    '\begin{deluxetable}{r l r r r r c c r r r r r c r @{$\pm$} l r @{$\pm$} l r @{$\pm$} l}', $
+    '\tablecolumns{20}', '', $
+    '\begin{deluxetable*}{r l r r r r c c r r r r r c r @{$\pm$} l r @{$\pm$} l r @{$\pm$} l}', $
     tab+['%Preamble', $
          '\tablecaption{BATSS catalog of single unidentified detections', $
          tab+'\label{tab:cat_Neq1}}']]
@@ -388,7 +386,7 @@ if keyword_set(HEASARC_search) then begin
       case HEASARC_search0 of
          'bzcat':begin
             ;-Include 'bzcat' catalog
-            bzcat_file = testroot+'120806_asdc_bzcat.txt'
+            bzcat_file = testroot+'120806_asdc_bzcat.txt' ;(01/11/20) Look up correct file/location!
             if file_test(bzcat_file) then begin
                print, "Including catalog 'bzcat'... ", f='(a,$)'
                lun=0 & line=''
@@ -964,7 +962,7 @@ for type=0,6 do begin
          string(src.glat_obj,f='("$",f+7.3,"$")')+amp+$
          ;string(60*src.err_rad,f='(f4.1)')+amp, $
          string(src_rad,f='(f4.1)')+amp, $
-         '\url{'+src.obs_id+'}'+amp, $
+         '\nolinkurl{'+src.obs_id+'}'+amp, $
          exp_str+amp+$
          string(100*src.pcodefr,f='(f5.1)')+amp, $
          (ie eq 0 ? '$'+src_snr_str+'$' : '')+amp+$
@@ -1062,13 +1060,13 @@ table = $
    '\enddata'], $
 ;   '\tablenotetext{a}{\citet{baumgartner12}}', $
 ;   '\tablenotetext{b}{Results from \Swift-BAT 70-month survey}'], $
-    '\end{deluxetable}', $
-    '\clearpage', $
-    '\end{landscape}']
+    '\end{deluxetable*}', $
+    '\end{longrotatetable}']
 ;-Plot legend
-legend, legend.text, color=legend.color, psym=7, thick=2*thick, $
-        charsize=1.2, charthick=chthick, box=0, /bottom, /horizontal, $
-        /normal, position=[0,0]
+;(01/11/20) AL_LEGEND replaced LEGEND in IDL Astronomy Library for IDL 8.0
+al_legend, legend.text, color=legend.color, psym=7, thick=2*thick, $
+           charsize=1.2, charthick=chthick, box=0, /bottom, /horizontal, $
+           /normal, position=[0,0]
 
 ;Write output file
 lun=0
