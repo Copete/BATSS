@@ -28,6 +28,8 @@ root = '/data/luna0/acopete/BATSS/'
 testroot = root+'GitHub/BATSS/Paper4_BATSS_survey/cat_Neq1/'  ;New location in Git repository
 
 results_only = 1B               ;Set to display results only
+heamatch = 0B                   ;Set to include HEASARC catalogs
+                                ;  1B=ALL catalogs, otherwise=select catalogs
 
 snr_thresh = 6.5
 flag_r99 = 0B ;Use 99% radii (rather than 90% radii) for matching
@@ -47,9 +49,11 @@ amp=' & '
 tab=string(9B)
 
 ;Output files
-texfile = testroot+'tab_cat_Neq1_HEASARC_all.tex'
-txtfile = testroot+'tab_cat_Neq1_HEASARC_all.txt'
-psfile  = testroot+'tab_cat_Neq1_HEASARC_all.ps'
+heasarc_suffix = (keyword_set(heamatch) ? '_HEASARC-'+(heamatch eq 1B ? 'all':'sel'):'')
+fileroot = testroot+'tab_cat_Neq1'+heasarc_suffix
+texfile = fileroot+'.tex'
+txtfile = fileroot+'.txt'
+psfile  = fileroot+'.ps'
 
 ;Initialize table
 n_col = 20 ;Number of table columns
@@ -377,7 +381,12 @@ print, 'done'
 ;heasarc_search = [heasarc_table] ;Match to only 1 table at a time
 ;heasarc_search = [''] ;Do not search HEASARC catalogs
 ;heasarc_search = ['bzcat',HEASARC_tables()] ;Search ALL tables
-heasarc_search = ['bzcat'] ;(01/11/20) Search just BZCAT until HEASARC_tables is fixed!
+case heamatch of
+   0B: heasarc_search = ['']    ;Do not search HEASARC catalogs
+   ;(01/11/20) HEASARC_tables needs to be fixed!
+   1B: heasarc_search = ['bzcat',HEASARC_tables()] ;Search ALL tables
+   else: heasarc_search = ['bzcat'] ;Include all other select HEASARC catalogs
+endcase
 heasarc = 0
 n_heasarc = 0
 if keyword_set(HEASARC_search) then begin
@@ -512,7 +521,8 @@ map_set, 0, 0, 0, $
          position=[0,0,normal[0],normal[1]], $ ;Normal coordinates
          /aitoff, /isotropic, /noborder, /reverse, /grid, /noerase, $
          /horizon, glinethick=thick, $
-         title='!5BATSS single unidentified detections, N=1, S/N>=6', $
+         title='!5BATSS single unidentified detections, N=1, S/N>='+$
+         string(snr_thresh,f='(f3.1)'), $
          charsize=chsize
 legend = 0
 
@@ -565,7 +575,7 @@ for type=0,6 do begin
       end
    endcase
    det = 0
-   idlfile0 = testroot+'tab_cat_Neq1_HEASARC_'+strlowcase(obs_type)+'.idl'
+   idlfile0 = testroot+'tab_cat_Neq1'+heasarc_suffix+'_'+strlowcase(obs_type)+'.idl'
    if keyword_set(results_only) then begin
       if file_test(idlfile0) then restore, idlfile0
       goto, no_get_dets
@@ -616,6 +626,7 @@ for type=0,6 do begin
    endif
    n_src = n_det
    ;-Subtable header
+   table0_tex_flag = 0B         ;Set only if >0 candidates found
    table0_tex = $
       tab + [$
       '%'+obs_type, $
@@ -951,6 +962,7 @@ for type=0,6 do begin
       no_heamatch:
       ;-LaTeX Table entry
       src_number = src_number + 1
+      table0_tex_flag = 1B
       table0_tex = $
          [table0_tex, $
           tab+[$
@@ -1042,7 +1054,8 @@ for type=0,6 do begin
    endfor
    if n_src gt 0 then print, 'done('+strtime(systime(1)-t2)+')'
 ;   plot, [0], /nodata, color=255
-   table = [table, table0_tex]
+   if table0_tex_flag then $
+      table = [table, table0_tex]
    table_txt = [table_txt, table0_txt, '']
    table0=0 & table0_txt=0 & cat=0
    if n_src_plot gt 0 then begin
