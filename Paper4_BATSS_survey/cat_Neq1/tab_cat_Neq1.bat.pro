@@ -25,8 +25,8 @@ END
 
 ;root = '/data/luna0/acopete/BATSS/' ;Old location
 ;testroot = root+'Papers/Paper4_BATSS_survey/cat_Neq1/' ;Old location
-root = '/data/luna0/acopete/BATSS/GitHub/BATSS/'
-testroot = 'Paper4_BATSS_survey/cat_Neq1/'
+root = '/data/luna0/acopete/BATSS/GitHub/BATSS/' ;New location in Git repository
+testroot = root+'Paper4_BATSS_survey/cat_Neq1/'  ;New location in Git repository
 
 results_only = 0B               ;Set to display results only
 
