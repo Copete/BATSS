@@ -23,8 +23,10 @@ den = ((0.001308d0*t + 0.189269d0)*t + 1.432788d0)*t + 1d0
 return, 0.70710678118654752440d0 * ((t - num/den) > 0)
 END
 
-root = '/data/luna0/acopete/BATSS/'
-testroot = root+'Papers/Paper4_BATSS_survey/cat_Neq1/'
+;root = '/data/luna0/acopete/BATSS/' ;Old location
+;testroot = root+'Papers/Paper4_BATSS_survey/cat_Neq1/' ;Old location
+root = '/data/luna0/acopete/BATSS/GitHub/BATSS/'
+testroot = 'Paper4_BATSS_survey/cat_Neq1/'
 
 results_only = 0B               ;Set to display results only
 
@@ -122,13 +124,16 @@ digit = strtrim(indgen(10),2)
 catfile      = testroot+'grb_table.txt'
 catfile_html = testroot+'grb_table.html'
 catfile_new  = testroot+'grb_table_new.txt'
-spawn, 'wget -q -O '+catfile_html+$
+command = 'wget -q -O '+catfile_html+$
        ' "http://heasarc.nasa.gov/docs/swift/archive/grb_table/'+$
        'grb_table.php?obs=All+Observatories&year=All+Years&restrict=none'+$
        '&grb_time=1&grb_trigger=1&bat_ra=1&bat_dec=1&bat_err_radius=1'+$
        '&bat_t90=1&bat_fluence=1&bat_err_fluence=1&bat_1s_peak_flux=1'+$
        '&bat_err_1s_peak_flux=1&bat_photon_index=1&bat_err_photon_index=1'+$
-       '&xrt_ra=1&xrt_dec=1&xrt_err_radius=1&view.x=35&view.y=14&view=submit"'
+          '&xrt_ra=1&xrt_dec=1&xrt_err_radius=1&view.x=35&view.y=14&view=submit"'
+print, command
+message, 'check!'
+
 lunr=0 & lunw=0 & liner=''
 openr, lunr, catfile_html, /get_lun
 openw, lunw, catfile_new, /get_lun
