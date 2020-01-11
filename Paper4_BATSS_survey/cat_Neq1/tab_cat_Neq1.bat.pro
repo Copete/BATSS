@@ -378,7 +378,8 @@ print, 'done'
 ;                  'veroncat']  ;Veron QSOs
 ;heasarc_search = [heasarc_table] ;Match to only 1 table at a time
 ;heasarc_search = [''] ;Do not search HEASARC catalogs
-heasarc_search = ['bzcat',HEASARC_tables()] ;Search ALL tables
+;heasarc_search = ['bzcat',HEASARC_tables()] ;Search ALL tables
+heasarc_search = ['bzcat',HEASARC_tables()] ;(01/11/20) Search just BZCAT until HEASARC_tables is fixed!
 heasarc = 0
 n_heasarc = 0
 if keyword_set(HEASARC_search) then begin
