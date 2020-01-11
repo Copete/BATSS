@@ -23,10 +23,9 @@ den = ((0.001308d0*t + 0.189269d0)*t + 1.432788d0)*t + 1d0
 return, 0.70710678118654752440d0 * ((t - num/den) > 0)
 END
 
-;root = '/data/luna0/acopete/BATSS/' ;Old location
+root = '/data/luna0/acopete/BATSS/'
 ;testroot = root+'Papers/Paper4_BATSS_survey/cat_Neq1/' ;Old location
-root = '/data/luna0/acopete/BATSS/GitHub/BATSS/' ;New location in Git repository
-testroot = root+'Paper4_BATSS_survey/cat_Neq1/'  ;New location in Git repository
+testroot = root+'GitHub/BATSS/Paper4_BATSS_survey/cat_Neq1/'  ;New location in Git repository
 
 results_only = 0B               ;Set to display results only
 
