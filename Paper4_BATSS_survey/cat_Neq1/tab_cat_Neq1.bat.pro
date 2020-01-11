@@ -138,7 +138,7 @@ command = 'wget -q -O '+catfile_html+$
           '&grb_time=1&grb_trigger=1&bat_ra=1&bat_dec=1&bat_err_radius=1'+$
           '&bat_t90=1&bat_fluence=1&bat_err_fluence=1&bat_1s_peak_flux=1'+$
           '&bat_err_1s_peak_flux=1&bat_photon_index=1&bat_err_photon_index=1'+$
-          '&xrt_ra=1&xrt_dec=1&xrt_err_radius=1'
+          '&xrt_ra=1&xrt_dec=1&xrt_err_radius=1"'
 
 
 print, command
