@@ -27,7 +27,7 @@ root = '/data/luna0/acopete/BATSS/'
 ;testroot = root+'Papers/Paper4_BATSS_survey/cat_Neq1/' ;Old location
 testroot = root+'GitHub/BATSS/Paper4_BATSS_survey/cat_Neq1/'  ;New location in Git repository
 
-results_only = 0B               ;Set to display results only
+results_only = 1B               ;Set to display results only
 heamatch = 0B                   ;Set to include HEASARC catalog matching
                                 ;  1B=ALL catalogs, otherwise=select catalogs
 
