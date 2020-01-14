@@ -699,9 +699,11 @@ for type=0,6 do begin
       if type le 2 then exp_str = strmid(exp_str,0,strpos(exp_str,'ks'))
       ie = (where(strtrim(src.eband,2) eq ebins.str))[0]
       src_snr = src.cent_snr
-      src_rad = 2.32 * ((src_snr lt 5.46) * 4.94/(src_snr/4.0)^2.26 + $
-                        ((src_snr ge 5.46) and (src_snr lt 8.26)) * 2.45/(src_snr/5.46)^1.13 + $
-                        (src_snr ge 8.26) * 1.54/(src_snr/8.26)^0.26)
+;      src_rad = 2.32 * ((src_snr lt 5.46) * 4.94/(src_snr/4.0)^2.26 + $
+;                        ((src_snr ge 5.46) and (src_snr lt 8.26)) * 2.45/(src_snr/5.46)^1.13 + $
+;                        (src_snr ge 8.26) * 1.54/(src_snr/8.26)^0.26) ;Revise this formula!
+      src_rad = sqrt(1.40^2 + (4.23*((6.0-2.20)/(src_snr-2.20))^0.51)^2) ;BATSS Paper 1, eq 20
+      ;(TO DO: Correct SRC_FLUX_ERR according to BATSS Paper 1!!!)
       src_flux = 1000D/Crabflux[ie]*src.cent_rate
       src_flux_err = src_flux / src_snr
       src_snr_str = strtrim(string(src_snr,f='(f7.2)'),2)
@@ -961,6 +963,8 @@ for type=0,6 do begin
 ;      endif
       no_heamatch:
       ;-LaTeX Table entry
+      IF TYPE EQ 5 THEN HELP, SRC
+
       src_number = src_number + 1
       table0_tex_flag = 1B
       table0_tex = $
