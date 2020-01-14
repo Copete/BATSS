@@ -742,6 +742,10 @@ for type=0,6 do begin
       endif
 ;      ;-Skip if minimum offset is less than 10 arcmin
       if troffset0 lt 10 then continue
+      ;-Other criteria (TEMP?)
+      ;   Skip single orbital detection with identical slew counterpart
+      ;   (FIX THIS PROPERLY LATER!!!)
+      if (type eq 5) and (src.obs_id eq '101103_02h24m38s') then continue      
       ;-Set flag to include in table
       heamatch_mask[i] = 1B
       ;-Perform HEASARC search
@@ -963,8 +967,6 @@ for type=0,6 do begin
 ;      endif
       no_heamatch:
       ;-LaTeX Table entry
-      IF TYPE EQ 5 THEN HELP, SRC
-
       src_number = src_number + 1
       table0_tex_flag = 1B
       table0_tex = $
