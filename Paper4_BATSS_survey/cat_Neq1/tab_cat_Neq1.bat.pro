@@ -27,11 +27,11 @@ root = '/data/luna0/acopete/BATSS/'
 ;testroot = root+'Papers/Paper4_BATSS_survey/cat_Neq1/' ;Old location
 testroot = root+'GitHub/BATSS/Paper4_BATSS_survey/cat_Neq1/'  ;New location in Git repository
 
-results_only = 0B               ;Set to display results only
+results_only = 1B               ;Set to display results only
 heamatch = 0B                   ;Set to include HEASARC catalog matching
                                 ;  1B=ALL catalogs, otherwise=select catalogs
 
-snr_thresh = 6.0
+snr_thresh = 6.5
 flag_r99 = 0B ;Use 99% radii (rather than 90% radii) for matching
 
 ;heasarc_table = 'bzcat' ;ASDC BZCAT (blazar catalog)
