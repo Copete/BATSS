@@ -31,14 +31,13 @@ class BATSS_dir:
     '''
     root = '/data/luna0/acopete/BATSS/' #Root directory for all BATSS data
 
-# define root directory!
 
 class BATSS_observation:
     '''
     BATSS generic observation class
     '''
     root = BATSS_dir.root
-    def __init__():
+    def __init__(self):
         '''
         Instantiate generic BATSS observation
         '''
@@ -52,6 +51,7 @@ class BATSS_observation:
         self.pcfile_realtime = '' # Partial coding map file
         self.attfile = '' # Attitude file
         self.attfile_realtime = '' # Attitude file
+
 
 class BATSS_slew(BATSS_observation):
     '''
