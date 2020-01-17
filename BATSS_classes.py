@@ -82,7 +82,7 @@ class BATSS_slew(BATSS_observation):
         # Archival files
         #if os.path.exists(obs_fitsfile[0]):
         if os.path.exists(obs_dir[0]):
-            fitsfile = self.dir+self.type+'_'+self.id+'.fits'
+            fitsfile = obs_dir[0]+self.type+'_'+self.id+'.fits'
             if os.path.exists(fitsfile):
                 self.fitsfile = os.path.realpath(fitsfile)
                 self.dir = os.path.dirname(self.fitsfile)+'/'
