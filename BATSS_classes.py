@@ -1,3 +1,6 @@
+# Define all global classes for BATSS objects
+# (01/16/20) General update
+
 import os, glob
 import numpy as np
 import astropy.units as u
