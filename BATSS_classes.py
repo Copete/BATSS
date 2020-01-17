@@ -37,7 +37,7 @@ class BATSS_observation:
     '''
     BATSS generic observation class
     '''
-    #root = ''  (01/16/20) Eliminate???
+    root = BATSS_dir.root
     def __init__():
         '''
         Instantiate generic BATSS observation
@@ -67,13 +67,12 @@ class BATSS_slew(BATSS_observation):
         assert isinstance(self.id, str)
         assert len(self.id) is 21
         # Get observation directory
-        root = BATSS_dir.root
         yymmdd = self.id[:6]
         yyyy_mm = '20'+yymmdd[:2]+'_'+yymmdd[2:4]
-        obs_dir = [root+'products/'+yyyy_mm+'/'+self.type+suffix+'/'
+        obs_dir = [self.root+'products/'+yyyy_mm+'/'+self.type+suffix+'/'
             +yymmdd+'/'+self.id+'/'
             for suffix in ['','_realtime']]
-        obs_queuefile = [root+'products/'+yyyy_mm+'/queue'+suffix+'/'
+        obs_queuefile = [self.root+'products/'+yyyy_mm+'/queue'+suffix+'/'
             +'queue_'+yymmdd+'_'+self.type+'.fits'
             for suffix in ['','_realtime']]
         # Archival files
