@@ -105,16 +105,23 @@ class BATSS_slew(BATSS_observation):
         else:
             self.queuefile = ''
         # Real-time files
-        if os.path.exists(obs_fitsfile[1]):
-            self.fitsfile_realtime = os.path.realpath(obs_fitsfile[1])
-            self.dir_realtime = os.path.dirname(self.fitsfile_realtime)+'/'
-            pcfile = glob.glob(self.dir_realtime+self.type+'_'+ self.id+'.img.pc*')
-            self.pcfile_realtime = pcfile[0] if len(pcfile)==1 else ''
-            attfile = glob.glob(self.dir_realtime+self.type+'_'+ self.id+'.att*')
+        if os.path.exists(obs_dir[1]):
+            fitsfile = obs_dir[1]+self.type+'_'+self.id+'.fits'
+            if os.path.exists(fitsfile):
+                self.fitsfile_realtime = os.path.realpath(fitsfile)
+                self.dir_realtime = os.path.dirname(self.fitsfile_realtime)+'/'
+                pcfile = glob.glob(self.dir_realtime+self.type+'_'+ self.id+'.img.pc*')
+                self.pcfile_realtime = pcfile[0] if len(pcfile)==1 else ''
+            else:
+                # For broken link, set directory to root disk directory
+                self.dir_realtime = obs_dir[1]
+                self.fitsfile_realtime = ''
+                self.pcfile_realtime = ''
+            attfile = glob.glob(self.dir_realtime+self.type+'_'+self.id+'.att*')
             self.attfile_realtime = attfile[0] if len(attfile)==1 else ''
         else:
-            self.fitsfile_realtime = ''
             self.dir_realtime = ''
+            self.fitsfile_realtime = ''
             self.pcfile_realtime = ''
             self.attfile_realtime = ''
         if os.path.exists(obs_queuefile[1]):
