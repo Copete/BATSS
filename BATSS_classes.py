@@ -79,6 +79,7 @@ class BATSS_slew(BATSS_observation):
             for suffix in ['','_realtime']]
         #obs_queuefile = ['./data_test/queue_'+yymmdd+'_'+self.type+'.fits' for suffix in ['','_realtime']] #TEMP
         # Archival files
+        print(obs_fitsfile)
         if os.path.exists(obs_fitsfile[0]):
             self.fitsfile = os.path.realpath(obs_fitsfile[0])
             self.dir = os.path.dirname(self.fitsfile)+'/'
