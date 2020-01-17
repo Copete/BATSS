@@ -70,26 +70,34 @@ class BATSS_slew(BATSS_observation):
         root = BATSS_dir.root
         yymmdd = self.id[:6]
         yyyy_mm = '20'+yymmdd[:2]+'_'+yymmdd[2:4]
-        obs_fitsfile = [root+'products/'+yyyy_mm+'/'+self.type+suffix+'/'
-            +yymmdd+'/'+self.id+'/'+self.type+'_'+self.id+'.fits'
+        obs_dir = [root+'products/'+yyyy_mm+'/'+self.type+suffix+'/'
+            +yymmdd+'/'+self.id+'/'
             for suffix in ['','_realtime']]
-        #obs_fitsfile = ['./data_test/'+self.type+'_'+self.id+'.fits' for suffix in ['','_realtime']] #TEMP
+#        obs_fitsfile = [root+'products/'+yyyy_mm+'/'+self.type+suffix+'/'
+#            +yymmdd+'/'+self.id+'/'+self.type+'_'+self.id+'.fits'
+#            for suffix in ['','_realtime']]
         obs_queuefile = [root+'products/'+yyyy_mm+'/queue'+suffix+'/'
             +'queue_'+yymmdd+'_'+self.type+'.fits'
             for suffix in ['','_realtime']]
-        #obs_queuefile = ['./data_test/queue_'+yymmdd+'_'+self.type+'.fits' for suffix in ['','_realtime']] #TEMP
         # Archival files
-        print(obs_fitsfile)
-        if os.path.exists(obs_fitsfile[0]):
-            self.fitsfile = os.path.realpath(obs_fitsfile[0])
-            self.dir = os.path.dirname(self.fitsfile)+'/'
-            pcfile = glob.glob(self.dir+self.type+'_'+self.id+'.img.pc*')
-            self.pcfile = pcfile[0] if len(pcfile)==1 else ''
+        #if os.path.exists(obs_fitsfile[0]):
+        if os.path.exists(obs_dir[0]):
+            fitsfile = self.dir+self.type+'_'+self.id+'.fits'
+            if os.path.exists(fitsfile):
+                self.fitsfile = os.path.realpath(fitsfile)
+                self.dir = os.path.dirname(self.fitsfile)+'/'
+                pcfile = glob.glob(self.dir+self.type+'_'+self.id+'.img.pc*')
+                self.pcfile = pcfile[0] if len(pcfile)==1 else ''
+            else:
+                # For broken link, set directory to root disk directory
+                self.dir = obs_dir[0]
+                self.fitsfile = ''
+                self.pcfile = ''
             attfile = glob.glob(self.dir+self.type+'_'+self.id+'.att*')
             self.attfile = attfile[0] if len(attfile)==1 else ''
         else:
-            self.fitsfile = ''
             self.dir = ''
+            self.fitsfile = ''
             self.pcfile = ''
             self.attfile = ''
         if os.path.exists(obs_queuefile[0]):
