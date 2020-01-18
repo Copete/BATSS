@@ -5,7 +5,7 @@ from astropy.table import Table
 from astropy import wcs
 
 # BATSS imports
-from BATSS_utils import BAT_pcfile_def
+from BATSS_utils import met2Time, BAT_pcfile_def
 from BATSS_classes import BATSS_dir
 
 def BATSS_gtihdr(
@@ -55,8 +55,8 @@ def BATSS_gtihdr(
         ('TSTART'  , min(gti_Table['START']), '(MET) Start time'),
         ('TSTOP'   , max(gti_Table['STOP']),  '(MET) Stop time')],
         bottom=True, update=True)
-    date_obs, utcf_start = BATSS_utils.met2Time(gtihdr['TSTART'], utcf=True)
-    date_end = BATSS_utils.met2Time(gtihdr['TSTOP'], utcf=True)[0]
+    date_obs, utcf_start = met2Time(gtihdr['TSTART'], utcf=True)
+    date_end = met2Time(gtihdr['TSTOP'], utcf=True)[0]
     gtihdr.extend([
         ('DATE-OBS', date_obs.isot, 'Date and time of observation start'),
         ('DATE-END', date_end.isot, 'Date and time of observation stop'),
