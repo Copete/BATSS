@@ -2,8 +2,8 @@ from BATSS_reprocess import BATSS_reprocess
 from batss_pointing_detect import batss_pointing_detect
 
 det = [
-#    {'obs_id':'120524_02h21m54s+154s', 'ra':114.798, 'dec':-14.110,
-#    'eband':'soft', 'err_rad':3.5}, #S/N=9.08, luna1
+    {'obs_id':'120524_02h21m54s+154s', 'ra':114.798, 'dec':-14.110,
+    'eband':'soft', 'err_rad':3.5}, #S/N=9.08, luna1
     {'obs_id':'120524_02h21m54s+154s', 'ra':114.783, 'dec':-14.138,
     'eband':'broad', 'err_rad':3.5}, # S/N=8.92, dahl1
     {'obs_id':'101103_03h03m56s+155s', 'ra': 61.946, 'dec':+15.017,

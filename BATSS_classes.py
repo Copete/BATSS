@@ -46,14 +46,16 @@ class BATSS_observation:
         '''
         self.type = ''
         self.id = ''
+        self.dir = ''  # Subdirectory within root (archival)
+        self.dir_realtime = ''  # Subdirectory within root (realtime)
         self.fitsfile = ''  # FITS file (archival)
         self.fitsfile_realtime = '' # FITS file (realtime)
         self.queuefile = '' # Queue file (archival)
         self.queuefile_realtime = '' # Queue file (realtime)
-        self.pcfile = '' # Partial coding map file
-        self.pcfile_realtime = '' # Partial coding map file
-        self.attfile = '' # Attitude file
-        self.attfile_realtime = '' # Attitude file
+        self.pcfile = '' # Partial coding map file (archival)
+        self.pcfile_realtime = '' # Partial coding map file (realtime)
+        self.attfile = '' # Attitude file (archival)
+        self.attfile_realtime = '' # Attitude file (realtime)
 
 
 class BATSS_slew(BATSS_observation):

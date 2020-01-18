@@ -135,28 +135,51 @@ def batss_pointing_detect(obs_id, #should be BATSS_slew object?
         print(obs0.fitsfile_realtime)
 
         # Get master FITS header for slew (archival by default)
-        if not os.path.exists(obs0.fitsfile):
-            if not os.path.exists(obs0.fitsfile_realtime):
-                raise IOError('Neither archival nor real-time files found'
-                    f' for {obs0.type} {obs0.id}')
-            else:
-                flag_realtime = True
+        flag_realtime = False
+        if os.path.exists(obs0.fitsfile):
+            hdrfile = obs.fitsfile
+            hdrext = 0
         else:
-            flag_realtime = False
-        fitsfile = obs0.fitsfile_realtime if flag_realtime else obs0.fitsfile
+            print('Warning: No archival master FITS file found for'
+                f' {obs0.type} {obs0.id}. Getting header info from queue file.')
+            if os.path.exists(obs0.queuefile):
+                hdrfile = obs0.queuefile
+                hdrext = obs0.type+'_'+obs0.id
+            else:
+                print('Warning: No archival queue file found for'
+                    f' {obs0.type} {obs0.id}. Getting header info from'
+                    f' real-time data')
+                flag_realtime = True
+                if os.path.exists(obs0.fitsfile_realtime):
+                    hdrfile = obs0.fitsfile_realtime
+                    hdrext = 0
+                else:
+                    print('Warning: No real-time master FITS file found for'
+                        f' {obs0.type} {obs0.id}. Getting header info from'
+                        f' queue file.')
+                    if os.path.exists(obs0.queuefile_realtime):
+                        hdrfile = obs0.queuefile_realtime
+                        hdrext = obs0.type+'_'+obs0.id
+                    else:
+                        raise IOError('Neither archival nor real-time files'
+                            f' found for {obs0.type} {obs0.id}')
+                                       f' for {obs0.type} {obs0.id}')
+        #fitsfile = obs0.fitsfile_realtime if flag_realtime else obs0.fitsfile
         try:
-            header = fits.getheader(fitsfile)
+            header = fits.getheader(hdrfile, ext)
         except IOError as err:
             raise IOError(err)
         except:
-            print('Some other error! (fitsfile)')
+            print('Some other error! (hdrfile)')
         # Partial coding map
         pcfile = obs0.pcfile_realtime if flag_realtime else obs0.pcfile
         try:
             if not os.path.exists(pcfile):
-                raise IOError('Partial coding file ('
+                # Try getting default partial coding map
+                print('Warning: Partial coding file ('
                     +('realtime' if flag_realtime else 'archival')
-                    +') does not exist')
+                    +') does not exist. Reading from default file.')
+                pcfile = BAT_pcfile_def()
             pcmap, pchdr = fits.getdata(pcfile, header=True)
         except IOError:
             raise

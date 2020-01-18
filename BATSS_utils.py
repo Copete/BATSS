@@ -1,3 +1,4 @@
+import os
 import subprocess as subp
 from astropy.time import Time
 
@@ -43,3 +44,17 @@ def met2Time(met, utcf=False):
         return mjd, utcf
     else:
         return mjd
+
+#---------------------------------------------------------------------------
+# Get default BAT partial coding map FITS file
+# 01/17/20: Function created
+
+def BAT_pcfile_def(): # No inputs
+    '''
+    Get default BAT partial coding map FITS file
+    '''
+    pcfile_def = BATSS_dir.root + 'pipeline/pcode_default.img'
+    if not os.path.exists(pcfile_def):
+        raise IOError('Default partial coding file does not exist ('
+            +pcfile_def+')')
+    return pcfile_def

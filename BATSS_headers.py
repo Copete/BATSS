@@ -105,8 +105,7 @@ def BAT_astrmod(
     assert isinstance(header, fits.Header)
 
     # Get default TAN astrometry structure from default partial coding image
-    imgfile_def = BATSS_dir.root + 'pipeline/pcode_default.img'
-    imgfile_def = './data_test/pcode_default.img' #TEMP
+    imgfile_def = BAT_pcfile_def()
     hdr_def = fits.getheader(imgfile_def)
 
     # Modify ra, dec, roll
