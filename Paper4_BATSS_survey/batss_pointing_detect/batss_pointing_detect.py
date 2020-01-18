@@ -170,7 +170,7 @@ def batss_pointing_detect(obs_id, #should be BATSS_slew object?
             print('Some other error! (hdrfile)')
         # Partial coding map
         pcfile = obs0.pcfile_realtime if flag_realtime else obs0.pcfile
-        try:
+        #try:
             if not os.path.exists(pcfile):
                 # Try getting default partial coding map
                 print('Warning: Partial coding file ('
@@ -181,11 +181,11 @@ def batss_pointing_detect(obs_id, #should be BATSS_slew object?
                 print('Default file located successfully')
             print('Partial coding map file: '+pcfile)
             pcmap, pchdr = fits.getdata(pcfile, header=True)
-        except IOError:
-            raise
-        except:
-            print('Some other error! (pcfile)')
-        else:
+#        except IOError:
+#            raise
+#        except:
+#            print('Some other error! (pcfile)')
+#        else:
             dims_pcmap = np.shape(pcmap)
         # Attitude file
         attfile = obs0.attfile_realtime if flag_realtime else obs0.attfile
