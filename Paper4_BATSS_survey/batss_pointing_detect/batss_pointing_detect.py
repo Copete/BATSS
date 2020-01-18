@@ -129,11 +129,6 @@ def batss_pointing_detect(obs_id, #should be BATSS_slew object?
         cat_in.header.set('TDISP7', 'F6.4', 'column display format',
             after='TUNIT7')
         cat_in.writeto(catfile_in, overwrite=True)
-
-        print('EXECUTING!')
-        print(obs0.fitsfile)
-        print(obs0.fitsfile_realtime)
-
         # Get master FITS header for slew (archival by default)
         flag_realtime = False
         if os.path.exists(obs0.fitsfile):
@@ -164,6 +159,9 @@ def batss_pointing_detect(obs_id, #should be BATSS_slew object?
                         raise IOError('Neither archival nor real-time files'
                             f' found for {obs0.type} {obs0.id}')
         #fitsfile = obs0.fitsfile_realtime if flag_realtime else obs0.fitsfile
+        print('Header file: '+hdrfile)
+        print('Extension:')
+        print(ext)
         try:
             header = fits.getheader(hdrfile, ext)
         except IOError as err:
