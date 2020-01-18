@@ -60,4 +60,5 @@ def BAT_pcfile_def(): # No inputs
     if not os.path.exists(pcfile_def):
         raise IOError('Default partial coding file does not exist ('
             +pcfile_def+')')
+    print('Function BAT_pcfile_def accessed successfully!')
     return pcfile_def
