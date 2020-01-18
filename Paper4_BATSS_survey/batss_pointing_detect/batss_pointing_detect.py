@@ -176,7 +176,9 @@ def batss_pointing_detect(obs_id, #should be BATSS_slew object?
                 print('Warning: Partial coding file ('
                     +('realtime' if flag_realtime else 'archival')
                     +') does not exist. Reading from default file.')
+                print('Trying to get default file...')
                 pcfile = BAT_pcfile_def()
+                print('Default file located successfully')
             print('Partial coding map file: '+pcfile)
             pcmap, pchdr = fits.getdata(pcfile, header=True)
         except IOError:
