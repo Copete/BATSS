@@ -131,7 +131,7 @@ def batss_pointing_detect(obs_id, #should be BATSS_slew object?
         # Get master FITS header for slew (archival by default)
         flag_realtime = False
         if os.path.exists(obs0.fitsfile):
-            hdrfile = obs.fitsfile
+            hdrfile = obs0.fitsfile
             hdrext = 0
         else:
             print('Warning: No archival master FITS file found for'
@@ -268,7 +268,7 @@ def batss_pointing_detect(obs_id, #should be BATSS_slew object?
                     afst_soup = BeautifulSoup(f0) #, 'lxml')
             except OSError:
                 raise
-            tr = afst_soup.find_all('tr')
+            tr = afst_soup.find_all('tr', features='lxml')
             for tr0 in tr:
                 try:
                     afst_class = tr0['class'][0]
