@@ -2,6 +2,9 @@ import os
 import subprocess as subp
 from astropy.time import Time
 
+# BATSS imports
+from BATSS_classes import BATSS_dir
+
 def met2Time(met, utcf=False):
     '''
     Perform swifttime transformation
