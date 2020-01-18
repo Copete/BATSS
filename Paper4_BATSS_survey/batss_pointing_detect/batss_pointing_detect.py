@@ -186,6 +186,8 @@ def batss_pointing_detect(obs_id, #should be BATSS_slew object?
 #            print('Some other error! (pcfile)')
 #        else:
         dims_pcmap = np.shape(pcmap)
+        print('dims_pcmap: ')
+        print(dims_pcmap)
         # Attitude file
         attfile = obs0.attfile_realtime if flag_realtime else obs0.attfile
         try:
