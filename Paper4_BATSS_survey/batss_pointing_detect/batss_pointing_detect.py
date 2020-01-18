@@ -163,7 +163,6 @@ def batss_pointing_detect(obs_id, #should be BATSS_slew object?
                     else:
                         raise IOError('Neither archival nor real-time files'
                             f' found for {obs0.type} {obs0.id}')
-                                       f' for {obs0.type} {obs0.id}')
         #fitsfile = obs0.fitsfile_realtime if flag_realtime else obs0.fitsfile
         try:
             header = fits.getheader(hdrfile, ext)
