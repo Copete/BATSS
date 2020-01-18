@@ -5,7 +5,7 @@ from astropy.table import Table
 from astropy import wcs
 
 # BATSS imports
-import BATSS_utils
+from BATSS_utils import BAT_pcfile_def
 from BATSS_classes import BATSS_dir
 
 def BATSS_gtihdr(

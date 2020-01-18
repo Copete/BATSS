@@ -22,8 +22,7 @@ parentdir = os.path.dirname(currentdir)
 sys.path.insert(0,parentdir)
 from BATSS_classes import BATSS_eband, BATSS_dir, BATSS_observation, BATSS_slew
 from BATSS_headers import BATSS_gtihdr, BAT_astrmod
-
-from BATSS_utils import met2Time
+from BATSS_utils import met2Time, BAT_pcfile_def
 
 def batss_pointing_detect(obs_id, #should be BATSS_slew object?
     ra, dec,    # Source RA/Dec
