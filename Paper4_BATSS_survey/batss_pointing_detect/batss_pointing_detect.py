@@ -161,9 +161,9 @@ def batss_pointing_detect(obs_id, #should be BATSS_slew object?
         #fitsfile = obs0.fitsfile_realtime if flag_realtime else obs0.fitsfile
         print('Header file: '+hdrfile)
         print('Extension:')
-        print(ext)
+        print(hdrext)
         try:
-            header = fits.getheader(hdrfile, ext)
+            header = fits.getheader(hdrfile, hdrext)
         except IOError as err:
             raise IOError(err)
         except:
