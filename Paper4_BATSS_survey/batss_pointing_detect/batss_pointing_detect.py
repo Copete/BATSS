@@ -265,10 +265,10 @@ def batss_pointing_detect(obs_id, #should be BATSS_slew object?
                 f'{date0.day:02}.html')
             try:
                 with open(afstfile,'r') as f0:
-                    afst_soup = BeautifulSoup(f0) #, 'lxml')
+                    afst_soup = BeautifulSoup(f0, features='lxml')
             except OSError:
                 raise
-            tr = afst_soup.find_all('tr', features='lxml')
+            tr = afst_soup.find_all('tr') #, features='lxml')
             for tr0 in tr:
                 try:
                     afst_class = tr0['class'][0]
