@@ -2,6 +2,26 @@ from BATSS_reprocess import BATSS_reprocess
 from batss_pointing_detect import batss_pointing_detect
 
 det = [
+    # Orbital
+    {'obs_id':'121201_19h15m53s+074s', 'ra':122.692, 'dec':-17.069,
+    'eband':'hard', 'err_rad':4.2}, #S/N=6.63, Orbit 121201_18h53m06s
+    {'obs_id':'121201_19h44m52s+176s', 'ra':122.692, 'dec':-17.069,
+    'eband':'hard', 'err_rad':4.2}, #S/N=6.63, Orbit 121201_18h53m06s
+    {'obs_id':'080827_14h15m59s+102s', 'ra':253.481, 'dec':-32.604,
+    'eband':'broad', 'err_rad':4.2}, #S/N=6.54, Orbit 080827_13h14m59s
+    {'obs_id':'080827_14h33m59s+189s', 'ra':253.481, 'dec':-32.604,
+    'eband':'broad', 'err_rad':4.2}, #S/N=6.54, Orbit 080827_13h14m59s
+    {'obs_id':'110204_06h53m55s+069s', 'ra':216.160, 'dec':+50.609,
+    'eband':'hard', 'err_rad':4.0}, #S/N=6.96, Orbit 110204_05h30m12s
+    {'obs_id':'110204_07h12m55s+135s', 'ra':216.160, 'dec':+50.609,
+    'eband':'hard', 'err_rad':4.0}, #S/N=6.96, Orbit 110204_05h30m12s
+    {'obs_id':'080508_17h11m01s+133s', 'ra':278.167, 'dec':+46.965,
+    'eband':'hard', 'err_rad':4.2}, #S/N=6.63, Orbit 080508_16h38m41s
+    {'obs_id':'080508_17h25m59s+089s', 'ra':278.167, 'dec':+46.965,
+    'eband':'hard', 'err_rad':4.2}, #S/N=6.63, Orbit 080508_16h38m41s
+    {'obs_id':'080508_17h30m59s+078s', 'ra':278.167, 'dec':+46.965,
+    'eband':'hard', 'err_rad':4.2}, #S/N=6.63, Orbit 080508_16h38m41s
+    # Slew
     {'obs_id':'120524_02h21m54s+154s', 'ra':114.798, 'dec':-14.110,
     'eband':'soft', 'err_rad':3.5}, #S/N=9.08, luna1
     {'obs_id':'120524_02h21m54s+154s', 'ra':114.783, 'dec':-14.138,
@@ -112,7 +132,7 @@ for i, det0 in enumerate(det):
         det0['eband'], det0['err_rad'])[0]
     for j in range(max(1,len(obs0.cat_pre),len(obs0.cat_pos))):
         if j == 0:
-            table += [tab+f"{1+i}{amp}{obs0.src_name}{amp}"
+            table += [tab+f"{1+i}{amp}{obs0.src_name_tex}{amp}"
                 f"\\nolinkurl{{{obs0.id}}}"]
             line0 = tab+amp
         else:
