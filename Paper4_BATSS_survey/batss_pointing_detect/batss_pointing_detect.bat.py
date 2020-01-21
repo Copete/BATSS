@@ -64,9 +64,9 @@ table = [
     r'\begin{longrotatetable}',
     r'\renewcommand{\tabcolsep}{0.4em}',
     r'\tabletypesize{\scriptsize}',
-    r'\tablecolumns{12}', '',
+    r'\tablecolumns{13}', '',
     #r'\begin{deluxetable*}{r l r r r r c c r r r r r c r @{$\pm$} l r @{$\pm$} l r @{$\pm$} l}',
-    r'\begin{deluxetable*}{r l c r r r r c r r r r}',
+    r'\begin{deluxetable*}{r l c c r r r r c r r r r}',
     tab+r'%Preamble',
     tab+r'\tablecaption{BATSS catalog of single unidentified detections'
         ' --- pointing data',
@@ -85,11 +85,12 @@ table_header_batss = [
     #r'\colhead{Gal.lat.}'+amp,
     #r'\colhead{$r_{90}$}'+amp,
     r'\colhead{\multirow{2}{*}{Observation}}'+amp,
+    r'\colhead{\multirow{2}{*}{$E_\text{band}$}}'+amp,
     #r'\colhead{Exp}'+amp,
     #r'\colhead{CF}'+amp,
     r'\multicolumn{4}{c}{Preceding}'+amp+amp,
     r'\multicolumn{4}{c}{Following} \\',
-    r'\cline{4-7} \cline{9-12}',
+    r'\cline{5-8} \cline{10-13}',
     amp+amp+amp, #'\colhead{[$^\circ$]}'+amp,
     #r'\colhead{[$^\circ$]}'+amp,
     #r'\colhead{[$^\circ$]}'+amp,
@@ -133,10 +134,10 @@ for i, det0 in enumerate(det):
     for j in range(max(1,len(obs0.cat_pre),len(obs0.cat_pos))):
         if j == 0:
             table += [tab+f"{1+i}{amp}{obs0.src_name_tex}{amp}"
-                f"\\nolinkurl{{{obs0.id}}}"]
+                f"\\nolinkurl{{{obs0.id}}}{amp}{obs0.eband.name.title()}"]
             line0 = tab+amp
         else:
-            line0 = tab+3*amp
+            line0 = tab+4*amp
         if j < len(obs0.cat_pre):
             det1 = obs0.cat_pre[j]
             line0 += (f"${det1['dt']:+.1f}${amp}{det1['exp']:.1f}{amp}"

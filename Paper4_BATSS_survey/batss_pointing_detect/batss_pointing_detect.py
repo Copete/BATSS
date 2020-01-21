@@ -43,7 +43,7 @@ def batss_pointing_detect(obs_id, #should be BATSS_slew object?
     pos = SkyCoord(ra, dec, unit='deg')
     coord_str = ('J'+pos.ra.to_string(unit='hour',pad=True,sep='',fields=2)
         +(10*pos.dec).to_string(pad=True,sep='',fields=1,alwayssign=True))
-    coord_str_tex = 'J$'+coord_str[1:]+'$' # TeX formatted
+    coord_str_tex = coord_str[:5]+'$'+coord_str[5]+'$'+coord_str[6:] # TeX
     eband = BATSS_eband(eband_name)
     err_rad = err_rad * u.arcmin
 
@@ -319,6 +319,7 @@ def batss_pointing_detect(obs_id, #should be BATSS_slew object?
         # Perform BATSURVEY analysis on preceding and following pointings
         obs0.src_name = 'BATSS '+coord_str # Include BATSS source name
         obs0.src_name_tex = 'BATSS '+coord_str_tex # TeX formatted
+        obs0.eband = eband
         for flag_pre in [True, False]:
             print(f'{70*"="} {datetime.now():%c}')
             f = open(txtfile, 'a')
